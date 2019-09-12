@@ -1,7 +1,11 @@
 from flask_restplus import Resource, Namespace
 
-api = Namespace('orders', description='Orders')
+from entity.order_entity import OrderEntity
+from entity.address_entity import AddressEntity
+from domain.order import Order
 
+api = Namespace('orders', description='Orders')
+order = Order()
 
 @api.route("/orders")
 class OrderResource(Resource):
