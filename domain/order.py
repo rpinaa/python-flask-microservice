@@ -9,3 +9,7 @@ class Order(schema.ModelSchema):
         load_only = ("deleted",)
         dump_only = ("id",)
         address = schema.Nested(AddressEntity)
+
+    @staticmethod
+    def get_instance() -> "Order":
+        return Order()

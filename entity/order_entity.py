@@ -22,7 +22,6 @@ class OrderEntity(db.Model):
     @classmethod
     def save(cls) -> None:
         db.session.add(cls)
-        db.session.add(cls.address)
         db.session.commit()
 
     @classmethod   

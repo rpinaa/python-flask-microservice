@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 
 from db import db
 from schema import schema
-from apis import api
+from restful import api
 
 app = Flask(__name__)
 

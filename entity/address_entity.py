@@ -17,3 +17,8 @@ class AddressEntity(db.Model):
     created_at = db.Column(db.DateTime, nullable=True, server_default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, nullable=True, server_onupdate=db.func.current_timestamp())
     deleted = db.Column(db.DateTime, nullable=False, default=False)
+
+    @classmethod
+    def save(cls) -> None:
+        db.session.add(cls)
+        db.session.commit()
