@@ -3,12 +3,12 @@ A lightweight microframework to build microservices bases on python 3.5+ and fla
 
 ## Requirements
 
-- Python 3.7
-- Pipenv 2018.11.26
+- python 3.7
+- pipenv 2018.11.26
 
 ## Stack
 
-- Python +3.7
+- python +3.7
 - flask +1.1.1
 - flask-migrate +2.5.2
 - flask-sqlalchemy +2.4.0
